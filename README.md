@@ -1,4 +1,4 @@
-# anime_library
+# Anime Library
 
 A new Flutter project inspired by anilist.
 
