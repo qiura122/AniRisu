@@ -1,8 +1,16 @@
+import 'package:anime_library/PopUpMenu/browse_page.dart';
+import 'package:anime_library/PopUpMenu/profile_page.dart';
+import 'package:anime_library/PopUpMenu/settings_page.dart';
+import 'package:anime_library/notif_page.dart';
 import 'package:flutter/material.dart';
+import 'AnimePage/dressdarling_page.dart';
 import 'AnimePage/frieren_page.dart';
+import 'AnimePage/horimiya_page.dart';
+import 'AnimePage/komi_page.dart';
 import 'AnimePage/orb_page.dart';
 import 'AnimePage/opm_page.dart';
 import 'AnimePage/jojo_page.dart';
+import 'AnimePage/spyfam_page.dart';
 
 class Home extends StatelessWidget {
   const Home({super.key});
@@ -16,9 +24,21 @@ class Home extends StatelessWidget {
           icon: const Icon(Icons.menu),
           onSelected: (value) {
             if (value == 'Profil') {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => ProfilePage()),
+              );
             } else if (value == 'Browse') {
-            } else if (value == 'MyList') {
-            } else if (value == 'Settings') {}
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => BrowsePage()),
+              );
+            } else if (value == 'Settings') {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => SettingsPage()),
+              );
+            }
           },
           itemBuilder:
               (BuildContext context) => [
@@ -37,11 +57,21 @@ class Home extends StatelessWidget {
               showSearch(context: context, delegate: AnimeSearchDelegate());
             },
           ),
-          IconButton(icon: const Icon(Icons.notifications), onPressed: () {}),
+          IconButton(
+            icon: const Icon(Icons.notifications),
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => const NotificationPage(),
+                ),
+              );
+            },
+          ),
         ],
       ),
       body: GridView.builder(
-        itemCount: 4, // hanya 4 kartu
+        itemCount: 8, // hanya 4 kartu
         gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
           crossAxisCount: 2,
           childAspectRatio: 0.8,
@@ -52,12 +82,20 @@ class Home extends StatelessWidget {
             'images/orb.jpg',
             'images/opm.jpg',
             'images/jojo.jpg',
+            'images/dressdarling.jpg',
+            'images/horimiya.jpg',
+            'images/komi.png',
+            'images/spyfam.jpg',
           ];
           final List<String> titles = [
             'Sousou no Frieren',
             'Orb: On the Movement of the Earth',
             'One Punch Man',
             'Jojo\'s Bizarre Adventure',
+            'Dress-Darling',
+            'Horimiya',
+            'Komi-san wa, Komyushou desu.',
+            'Spy x Family',
           ];
 
           // Daftar page yang akan dibuka
@@ -66,6 +104,10 @@ class Home extends StatelessWidget {
             OrbPage(),
             OpmPage(),
             JojoPage(),
+            DressDarlingPage(),
+            HorimiyaPage(),
+            KomiPage(),
+            SpyFamPage(),
           ];
 
           return InkWell(
