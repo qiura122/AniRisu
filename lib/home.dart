@@ -1,7 +1,7 @@
-import 'package:anime_library/PopUpMenu/browse_page.dart';
-import 'package:anime_library/PopUpMenu/profile_page.dart';
-import 'package:anime_library/PopUpMenu/settings_page.dart';
-import 'package:anime_library/notif_page.dart';
+import 'package:anime_library/AppBarMenu/browse_page.dart';
+import 'package:anime_library/AppBarMenu/profile_page.dart';
+import 'package:anime_library/AppBarMenu/settings_page.dart';
+import 'package:anime_library/AppBarMenu/notif_page.dart';
 import 'package:flutter/material.dart';
 import 'AnimePage/dressdarling_page.dart';
 import 'AnimePage/frieren_page.dart';
