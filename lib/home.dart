@@ -74,7 +74,7 @@ class Home extends StatelessWidget {
         itemCount: 8, // hanya 4 kartu
         gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
           crossAxisCount: 2,
-          childAspectRatio: 0.8,
+          childAspectRatio: 1,
         ),
         itemBuilder: (context, index) {
           final List<String> images = [
@@ -133,6 +133,33 @@ class Home extends StatelessWidget {
             ),
           );
         },
+      ),
+      bottomNavigationBar: Container(
+        color: Colors.deepPurpleAccent,
+        padding: const EdgeInsets.symmetric(vertical: 8),
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          children: [
+            IconButton(
+              icon: const Icon(Icons.home, color: Colors.white),
+              onPressed: () {
+                // Aksi jika tombol Home ditekan
+              },
+            ),
+            IconButton(
+              icon: const Icon(Icons.favorite, color: Colors.white),
+              onPressed: () {
+                // Aksi jika tombol Favorite ditekan
+              },
+            ),
+            IconButton(
+              icon: const Icon(Icons.person, color: Colors.white),
+              onPressed: () {
+                // Aksi jika tombol Profile ditekan
+              },
+            ),
+          ],
+        ),
       ),
     );
   }
