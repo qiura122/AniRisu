@@ -1,16 +1,49 @@
-# Anime Library
+# AniRisu 🐿️📚
 
-A new Flutter project inspired by anilist.
+![AniRisu Logo](./AniRisuHrz.png)
 
-## Getting Started
+**AniRisu** is a sleek and modern **anime & manga library client** built with Flutter and powered by the [AniList GraphQL API](https://anilist.gitbook.io). It helps you explore, track, and manage your favorite anime and manga collections, all from your mobile device.
 
-This project is a starting point for a Flutter application for simple college project.
+---
 
-A few resources to get you started if this is your first Flutter project:
+## ✨ Features
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- 🔍 Search for your favourite anime and manga
+- 📄 View detailed information (title, synopsis, rating, cover art)
+- 🔐 Log in with **AniList**
+- 🗂️ Track your anime/manga progress (Watching, Completed, Planned)
+- 💙 Add favorites and create your personal library
+- 🌙 Beautiful dark and light mode themes
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+---
+
+## 📱 Screenshots
+
+*Coming soon...*
+
+---
+
+## 🚀 Getting Started
+
+Make sure you have [Flutter SDK](https://flutter.dev/docs/get-started/install) installed.
+
+```bash
+git clone https://github.com/your-username/AniRisu.git
+cd AniRisu
+flutter pub get
+flutter run
+```
+
+---
+
+## 👤 Credits
+
+- Logo: AniRisu Branding (blue/white, kanji 栗鼠 "risu" = squirrel)
+- Data API: [AniList.co](https://anilist.co)
+- Created with 💙 by [@qiura122](https://github.com/qiura122)
+
+---
+
+## 📄 License
+
+This project is licensed under the [MIT License](LICENSE).
