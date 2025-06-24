@@ -1,4 +1,4 @@
-# AniRisu 🐿️📚
+# AniRisu
 
 ![AniRisu Logo](./AniRisuHrz.png)
 
