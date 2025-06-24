@@ -71,7 +71,7 @@ class Home extends StatelessWidget {
         ],
       ),
       body: GridView.builder(
-        itemCount: 8, // hanya 4 kartu
+        itemCount: 8,
         gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
           crossAxisCount: 2,
           childAspectRatio: 1,
@@ -98,7 +98,6 @@ class Home extends StatelessWidget {
             'Spy x Family',
           ];
 
-          // Daftar page yang akan dibuka
           final List<Widget> pages = [
             FrierenPage(),
             OrbPage(),
@@ -142,21 +141,15 @@ class Home extends StatelessWidget {
           children: [
             IconButton(
               icon: const Icon(Icons.home, color: Colors.white),
-              onPressed: () {
-                // Aksi jika tombol Home ditekan
-              },
+              onPressed: () {},
             ),
             IconButton(
               icon: const Icon(Icons.favorite, color: Colors.white),
-              onPressed: () {
-                // Aksi jika tombol Favorite ditekan
-              },
+              onPressed: () {},
             ),
             IconButton(
               icon: const Icon(Icons.person, color: Colors.white),
-              onPressed: () {
-                // Aksi jika tombol Profile ditekan
-              },
+              onPressed: () {},
             ),
           ],
         ),
@@ -167,16 +160,14 @@ class Home extends StatelessWidget {
 
 class AnimeSearchDelegate extends SearchDelegate {
   final List<String> animeList = [
-    'Naruto',
-    'One Piece',
-    'Attack on Titan',
     'Sousou no Frieren',
     'Orb: On the Movement of the Earth',
-    'Death Note',
-    'Fullmetal Alchemist',
-    'Jojo\'s Bizarre Adventure',
     'One Punch Man',
-    'Dragon Ball Z',
+    'Jojo\'s Bizarre Adventure',
+    'Dress-Darling',
+    'Horimiya',
+    'Komi-san wa, Komyushou desu.',
+    'Spy x Family',
   ];
 
   @override
