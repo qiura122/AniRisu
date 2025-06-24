@@ -28,7 +28,7 @@
 Make sure you have [Flutter SDK](https://flutter.dev/docs/get-started/install) installed.
 
 ```bash
-git clone https://github.com/your-username/AniRisu.git
+git clone https://github.com/qiura122/AniRisu.git
 cd AniRisu
 flutter pub get
 flutter run
